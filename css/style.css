@@ -1,0 +1,297 @@
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+}
+/* -------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	background-color: rgb(23, 219, 39);
+}
+.inner {
+	position: relative;
+}
+/* дорога */
+.auto__track {
+	border-top: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	position: relative;
+	top: 300px;
+	width: 100%;
+	height: 400px;
+	background-color: #333;
+}
+.auto__track span {
+	display: inline-block;
+	width: 50px;
+	height: 5px;
+	position: relative;
+	top: 50%;
+	margin: -50% 0 0 0;
+}
+.auto__track span:nth-child(even) {
+	background-color: #fff;
+}
+/* дорога */
+/* крыша,мигалка */
+
+.auto__top {
+	position: relative;
+	display: inline-block;
+	top: 15px;
+	width: 640px;
+	height: 62px;
+	left: 284px;
+	background-color: #ffff00;
+	border-radius: 100px 100px 0 0;
+}
+.wind1 {
+	position: relative;
+	display: inline-block;
+	width: 32px;
+	height: 20px;
+	top: -20px;
+	left: 406px;
+	background-color: rgb(248, 133, 1);
+	border-radius: 50% 20px 0 0;
+}
+.wind2 {
+	position: absolute;
+	display: inline-block;
+	width: 3px;
+	height: 198px;
+	background-color: #000;
+	top: 0px;
+	left: 310px;
+	z-index: 2;
+}
+.wind3 {
+	position: absolute;
+	width: 640px;
+	height: 3px;
+	background-color: #000;
+	top: 56px;
+	z-index: 2;
+	left: 0;
+}
+.wind4 {
+	position: absolute;
+	width: 3px;
+	height: 152px;
+	top: 46px;
+	left: 0;
+	z-index: 2;
+	background-color: #000;
+}
+.wind5 {
+	position: absolute;
+	width: 301px;
+	height: 49px;
+	right: 17px;
+	top: 4px;
+	z-index: 2;
+	background-color: #666;
+	border-radius: 0 50px 0 0;
+}
+.wind6 {
+	position: absolute;
+	width: 295px;
+	height: 49px;
+	left: 10px;
+	top: 4px;
+	z-index: 2;
+	background-color: #666;
+	border-radius: 50px 0 0 0;
+}
+.wind7 {
+	position: absolute;
+	width: 30px;
+	height: 5px;
+	left: 33px;
+	top: 70px;
+	background-color: #000;
+	border-radius: 50%;
+	z-index: 2;
+}
+.wind8 {
+	position: absolute;
+	width: 30px;
+	height: 5px;
+	right: 278px;
+	top: 70px;
+	background-color: #000;
+	border-radius: 50%;
+	z-index: 2;
+}
+.wind9 {
+	position: absolute;
+	z-index: 2;
+	bottom: -136px;
+	right: 0;
+	width: 3px;
+	height: 139px;
+	background-color: #000;
+}
+
+/* крыша,мигалка */
+
+/* центр,сплер,фара */
+
+.auto__mid {
+	position: absolute;
+	top: 462px;
+	left: 146px;
+}
+.med {
+	position: absolute;
+	width: 1000px;
+	height: 150px;
+	background-color: rgb(255, 255, 0);
+	/* position: relative; */
+	z-index: 1;
+	border-radius: 125px 50% 0 0;
+}
+.spoiler {
+	position: absolute;
+	width: 5px;
+	height: 25px;
+	z-index: 2;
+	background-color: #000;
+	left: 73px;
+	top: -13px;
+	border-radius: 0 0 6px 2px;
+}
+.spoiler2 {
+	position: absolute;
+	width: 50px;
+	height: 5px;
+	z-index: 2;
+	background-color: #000;
+	left: 46px;
+	top: -18px;
+	border-radius: 50%;
+}
+
+.headlight::before {
+	position: absolute;
+	bottom: 24px;
+	left: -6px;
+	display: inline-block;
+	content: "";
+	width: 9px;
+	height: 20px;
+	background-color: rgb(250, 4, 4);
+	border-radius: 7px 0 0 7px;
+}
+.headlight::after {
+	position: absolute;
+	bottom: 20px;
+	right: -7px;
+	display: inline-block;
+	content: "";
+	width: 9px;
+	height: 43px;
+	background-color: rgb(4, 180, 250);
+	border-radius: 0 50% 50% 0;
+}
+
+/* центр,сплер,фара */
+.auto__wheel {
+	position: absolute;
+	top: 623px;
+	display: inline-block;
+	z-index: 2;
+	left: 0px;
+}
+.wheel__right {
+	position: absolute;
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	z-index: 2;
+	background-color: #000;
+	left: 253px;
+	bottom: -50px;
+	border-radius: 50%;
+}
+.wheel__left {
+	position: absolute;
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	z-index: 2;
+	background-color: #000;
+	right: -1051px;
+	bottom: -50px;
+	border-radius: 50%;
+}
+.left__center {
+	position: relative;
+	width: 90px;
+	height: 90px;
+	background-color: #fff;
+	top: 15px;
+	left: 15px;
+	border-radius: 50%;
+}
+.right__center {
+	position: relative;
+	width: 90px;
+	height: 90px;
+	background-color: #fff;
+	top: 15px;
+	left: 15px;
+	border-radius: 50%;
+}
+.right__dot {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	top: 39px;
+	left: 39px;
+	border-radius: 50%;
+}
+.left__dot {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	top: 39px;
+	left: 39px;
+	border-radius: 50%;
+}
